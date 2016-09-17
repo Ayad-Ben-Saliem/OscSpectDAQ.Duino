@@ -26,7 +26,7 @@
 #define BufferSize   10000                    // Buffer Size.
 #define RESET        BufferCount-1
 volatile int bufn, obufn;
-uint16_t buff[ BufferCount ][ BufferSize ];     // 4 buffers of 256 readings.
+uint16_t buff[ BufferCount ][ BufferSize ];     // BufferCount buffers of BufferSize readings.
 
 #define bytesPerBuffer (int)(BufferSize * sizeof(uint16_t))
 
